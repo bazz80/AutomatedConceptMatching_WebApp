@@ -1,0 +1,24 @@
+﻿<div>
+    <h1>Mimosa Concepts</h1>
+</div>
+
+<div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mimosa Concept</th>
+                <th>Mimosa Description</th>
+                <th>Mimosa Relationships</th>
+            </tr>
+        </thead>
+        <tbody class="_mimosaConcepts">
+            <tr *ngFor="let row of _mimosaConcepts">
+                <td>{{row.mimosa_Name}}</td>
+                <td>{{row.mimosa_Desc}}</td>
+                <td>{{row.mimosa_Rel}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

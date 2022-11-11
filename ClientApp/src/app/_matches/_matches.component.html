@@ -1,0 +1,35 @@
+﻿<div>
+    <h1>
+        Matching Results Between PLCS and Mimosa
+    </h1>
+</div>
+
+<div>
+    <form [formGroup]="searchForm" (submit)="submit()" class="form">
+        <label>Enter search term:  </label>
+        <input id="searchText" type="text" formControlName="searchText">
+        <button class="form-button" color="primary" type="submit">search</button>
+    </form>
+</div>
+
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>PLCS Concept</th>
+                <th>Mimosa Concept</th>
+                <th>Name Similarity</th>
+                <th>Description Similarity</th>
+            </tr>
+        </thead>
+        <tbody class="_matchConcepts">
+            <tr *ngFor="let row of _matchConcepts">
+                <td>{{row.match_Plcs_Name}}</td>
+                <td>{{row.match_Mimosa_Name}}</td>
+                <td>{{row.match_Name_Sim}}</td>
+                <td>{{row.match_Desc_Sim}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
