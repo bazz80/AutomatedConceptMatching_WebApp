@@ -1,5 +1,4 @@
-﻿import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-//import { MdbCollapseDirective } from 'mdb-angular-ui-kit/collapse';
+﻿import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 import { _matchConcept } from './_matchConcept';

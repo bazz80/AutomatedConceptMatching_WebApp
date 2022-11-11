@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 
 export class MatchesService {
 
-    public baseUrl = "/Match/GetAll";
+    //public baseUrl = "/Match/GetAll";
     public searchUrl = "/Match/GetMatches/"
     //public searchTermUrl: string;
     //public searchTerm: string;

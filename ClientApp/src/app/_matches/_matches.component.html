@@ -19,16 +19,28 @@
             <tr>
                 <th>PLCS Concept</th>
                 <th>Mimosa Concept</th>
+                <th>Weighted Similarity</th>
                 <th>Name Similarity</th>
+                <th>Relationship Similarity</th>
                 <th>Description Similarity</th>
+                <th>PLCS Description</th>
+                <th>MIMOSA Description</th>
+                <th>PLCS Relationships</th>
+                <th>MIMOSA Relationships</th>
             </tr>
         </thead>
         <tbody class="_matchConcepts">
             <tr *ngFor="let row of _matchConcepts">
                 <td>{{row.match_Plcs_Name}}</td>
                 <td>{{row.match_Mimosa_Name}}</td>
+                <td>{{row.match_Weight_Sim}}</td>
                 <td>{{row.match_Name_Sim}}</td>
+                <td>{{row.match_Rel_Sim}}</td>
                 <td>{{row.match_Desc_Sim}}</td>
+                <td>{{row.match_Plcs_Desc}}</td>
+                <td>{{row.match_Mimosa_Desc}}</td>
+                <td>{{row.match_Plcs_Rel}}</td>
+                <td>{{row.match_Mimosa_Rel}}</td>
             </tr>
         </tbody>
     </table>

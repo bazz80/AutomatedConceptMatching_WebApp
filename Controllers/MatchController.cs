@@ -30,14 +30,6 @@ namespace T46_AngularTest.Controllers
             return new OkObjectResult(result);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
-        {
-            await Db.Connection.OpenAsync();
-            var query = new MatchConceptQuery(Db);
-            var result = await query.ListAll();
-            return new OkObjectResult(result);
-        }
     }
     
 }

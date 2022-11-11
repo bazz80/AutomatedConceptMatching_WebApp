@@ -22,7 +22,7 @@ namespace T46_AngularTest
         public async Task<List<PlcsConcept>> ListPlcsAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"SELECT idPLCS, name, description, relationships FROM plcs ORDER BY name ASC";
+            cmd.CommandText = @"SELECT idPLCS, name_plcs, description, relationships FROM plcs ORDER BY name_plcs ASC";
             return await ReadPlcsAsync(await cmd.ExecuteReaderAsync());
         }
 
