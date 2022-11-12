@@ -1,4 +1,4 @@
-﻿import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 
 import { _plcsConcept } from './_plcsConcept';
 import { PlcsService } from './_plcs.service';
@@ -24,6 +24,7 @@ export class _plcsComponent implements OnInit {
         this.PlcsService.getPlcs()
             .subscribe(_plcsConcepts => (this._plcsConcepts = _plcsConcepts));
     }
+
 
 }
 
