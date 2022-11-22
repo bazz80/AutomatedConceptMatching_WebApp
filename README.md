@@ -21,8 +21,8 @@ Runtime Stack: .net 6.0 (LTS)<br>
 Operating System: Windows<br>
 <br>
 Deployment:<br>
-Configure to be a cloned source of thie Git repository.<br>
-edit the appsettings.json file in your Git repository to be configured with credentials for your
+Configure to be a cloned source of thie Git repository, using the Azure branch<br>
+Edit the appsettings.json file in your Git repository to be configured with credentials for your
 MySQL server.<br>
   <br>
 Done. :)
